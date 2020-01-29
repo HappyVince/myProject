@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<p>Liste un peu nul</p>
+@{
+    for (int i = 0; i < 3; i++)
+    {
+        {<p>@i</p>}
+}
+}
+
+<p>Liste de la vue</p>
+@{
+    var list = new List<int>();
+    list.Add(2);
+    list.Add(1);
+    list.Add(7);
+}
+<ul>
+    @{
+        var j = 0;
+        while (j < list.Count)
+        {
+            <li>@list[j]</li>
+            j++;
+        }
+    }
+</ul>
+
+
+<p>Liste ViewBag</p>
+<ul>
+    @foreach (var item in ViewBag.list)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+
+
+<p>Liste ViewBag</p>
+<ul>
+    @foreach (var item in ViewData["list"] as List<int>)
+    {
+        <li>@item</li>
+    }
+</ul>
+@* commentaire *@
+
+@Html.TextBox("text", "hello");
+<input type="submit" name="tada" value="Envoyer" />
+<h2>Index</h2>
+

@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+@Html.ActionLink("Liste des items", "List");
+<br />
+@Html.ActionLink("Ajouter des items a mon panier", "GetAjouterPanier");
+<br />
+@Html.ActionLink("Acheter des items de mon panier", "GetAcheter");
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+@Html.ActionLink("Se connecter/S'inscrire", "Index","Login");
+<br />
+@Html.ActionLink("(Admin only)Ajouter des items a ma base de donnée", "GetAjouter");

@@ -1,0 +1,16 @@
+﻿@model EntityFramework.Personne
+<h3>Inscription </h3>
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.Label("login")
+        @Html.TextBox("login")
+        @Html.ValidationMessage("login")
+    </div>
+    <div>
+        @Html.Label("Password")
+        @Html.Password("Password")
+        @Html.ValidationMessage("Password")
+    </div>
+    <input type="submit" value="Inscription" />
+}

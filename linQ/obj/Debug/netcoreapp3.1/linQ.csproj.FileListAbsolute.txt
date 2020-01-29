@@ -1,0 +1,11 @@
+C:\Users\Administrateur\source\repos\ProjectTab\linQ\bin\Debug\netcoreapp3.1\linQ.exe
+C:\Users\Administrateur\source\repos\ProjectTab\linQ\bin\Debug\netcoreapp3.1\linQ.deps.json
+C:\Users\Administrateur\source\repos\ProjectTab\linQ\bin\Debug\netcoreapp3.1\linQ.runtimeconfig.json
+C:\Users\Administrateur\source\repos\ProjectTab\linQ\bin\Debug\netcoreapp3.1\linQ.runtimeconfig.dev.json
+C:\Users\Administrateur\source\repos\ProjectTab\linQ\bin\Debug\netcoreapp3.1\linQ.dll
+C:\Users\Administrateur\source\repos\ProjectTab\linQ\bin\Debug\netcoreapp3.1\linQ.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\linQ\obj\Debug\netcoreapp3.1\linQ.csprojAssemblyReference.cache
+C:\Users\Administrateur\source\repos\ProjectTab\linQ\obj\Debug\netcoreapp3.1\linQ.AssemblyInfoInputs.cache
+C:\Users\Administrateur\source\repos\ProjectTab\linQ\obj\Debug\netcoreapp3.1\linQ.AssemblyInfo.cs
+C:\Users\Administrateur\source\repos\ProjectTab\linQ\obj\Debug\netcoreapp3.1\linQ.dll
+C:\Users\Administrateur\source\repos\ProjectTab\linQ\obj\Debug\netcoreapp3.1\linQ.pdb

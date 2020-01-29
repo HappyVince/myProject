@@ -1,0 +1,11 @@
+C:\Users\Administrateur\source\repos\ProjectTab\ProjectTab\bin\Debug\netcoreapp3.1\ProjectTab.exe
+C:\Users\Administrateur\source\repos\ProjectTab\ProjectTab\bin\Debug\netcoreapp3.1\ProjectTab.deps.json
+C:\Users\Administrateur\source\repos\ProjectTab\ProjectTab\bin\Debug\netcoreapp3.1\ProjectTab.runtimeconfig.json
+C:\Users\Administrateur\source\repos\ProjectTab\ProjectTab\bin\Debug\netcoreapp3.1\ProjectTab.runtimeconfig.dev.json
+C:\Users\Administrateur\source\repos\ProjectTab\ProjectTab\bin\Debug\netcoreapp3.1\ProjectTab.dll
+C:\Users\Administrateur\source\repos\ProjectTab\ProjectTab\bin\Debug\netcoreapp3.1\ProjectTab.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\ProjectTab\obj\Debug\netcoreapp3.1\ProjectTab.AssemblyInfoInputs.cache
+C:\Users\Administrateur\source\repos\ProjectTab\ProjectTab\obj\Debug\netcoreapp3.1\ProjectTab.AssemblyInfo.cs
+C:\Users\Administrateur\source\repos\ProjectTab\ProjectTab\obj\Debug\netcoreapp3.1\ProjectTab.dll
+C:\Users\Administrateur\source\repos\ProjectTab\ProjectTab\obj\Debug\netcoreapp3.1\ProjectTab.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\ProjectTab\obj\Debug\netcoreapp3.1\ProjectTab.csprojAssemblyReference.cache

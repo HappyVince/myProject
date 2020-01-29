@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Acheter";
+}
+
+<h2>Supprimer</h2>
+
+
+@foreach (var item in ViewBag.panier)
+{
+    <p>@item.Nom @item.Prix @item.Id</p>
+}
+
+
+@using (Html.BeginForm("Acheter", "Home"))
+{
+    <p>Id</p>
+    @Html.Editor("Id");
+    <br />
+    <input type="submit" name="but" value="Acheter" />
+}

@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+
+@foreach (var user in ViewBag.list)
+{
+    <p>@user.Nom @user.Prenom @user.Id</p>
+}

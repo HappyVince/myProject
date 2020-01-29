@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "AjouterPanier";
+}
+
+<h2>Ajouter</h2>
+
+
+@using (Html.BeginForm("AjouterPanier", "Home"))
+{
+<p>Id</p>
+    @Html.Editor("Id");
+    <input type="submit" name="but" value="Ajouter" />
+
+}

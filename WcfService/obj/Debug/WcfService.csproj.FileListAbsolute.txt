@@ -1,0 +1,11 @@
+C:\Users\Administrateur\source\repos\ProjectTab\WcfService\bin\WcfService.dll.config
+C:\Users\Administrateur\source\repos\ProjectTab\WcfService\bin\WcfService.dll
+C:\Users\Administrateur\source\repos\ProjectTab\WcfService\bin\WcfService.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\WcfService\obj\Debug\WcfService.csprojAssemblyReference.cache
+C:\Users\Administrateur\source\repos\ProjectTab\WcfService\obj\Debug\WcfService.dll
+C:\Users\Administrateur\source\repos\ProjectTab\WcfService\obj\Debug\WcfService.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\WcfService\bin\EntityFramework.dll
+C:\Users\Administrateur\source\repos\ProjectTab\WcfService\bin\EntityFramework.SqlServer.dll
+C:\Users\Administrateur\source\repos\ProjectTab\WcfService\bin\EntityFramework.xml
+C:\Users\Administrateur\source\repos\ProjectTab\WcfService\bin\EntityFramework.SqlServer.xml
+C:\Users\Administrateur\source\repos\ProjectTab\WcfService\obj\Debug\WcfService.csproj.CopyComplete

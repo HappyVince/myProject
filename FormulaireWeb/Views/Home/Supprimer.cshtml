@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Supprimer";
+}
+
+<h2>Supprimer</h2>
+
+@using (Html.BeginForm("Supprimer", "Home"))
+{
+    <p>Id</p>
+    @Html.Editor("Id");
+    <br />
+    <input type="submit" name="but" value="Supprimer" />
+}

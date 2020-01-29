@@ -1,0 +1,11 @@
+C:\Users\Administrateur\source\repos\ProjectTab\tuc\bin\Debug\netcoreapp3.1\tuc.exe
+C:\Users\Administrateur\source\repos\ProjectTab\tuc\bin\Debug\netcoreapp3.1\tuc.deps.json
+C:\Users\Administrateur\source\repos\ProjectTab\tuc\bin\Debug\netcoreapp3.1\tuc.runtimeconfig.json
+C:\Users\Administrateur\source\repos\ProjectTab\tuc\bin\Debug\netcoreapp3.1\tuc.runtimeconfig.dev.json
+C:\Users\Administrateur\source\repos\ProjectTab\tuc\bin\Debug\netcoreapp3.1\tuc.dll
+C:\Users\Administrateur\source\repos\ProjectTab\tuc\bin\Debug\netcoreapp3.1\tuc.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\tuc\obj\Debug\netcoreapp3.1\tuc.csprojAssemblyReference.cache
+C:\Users\Administrateur\source\repos\ProjectTab\tuc\obj\Debug\netcoreapp3.1\tuc.AssemblyInfoInputs.cache
+C:\Users\Administrateur\source\repos\ProjectTab\tuc\obj\Debug\netcoreapp3.1\tuc.AssemblyInfo.cs
+C:\Users\Administrateur\source\repos\ProjectTab\tuc\obj\Debug\netcoreapp3.1\tuc.dll
+C:\Users\Administrateur\source\repos\ProjectTab\tuc\obj\Debug\netcoreapp3.1\tuc.pdb

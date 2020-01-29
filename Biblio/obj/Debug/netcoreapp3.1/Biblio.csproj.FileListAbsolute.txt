@@ -1,0 +1,11 @@
+C:\Users\Administrateur\source\repos\ProjectTab\Biblio\bin\Debug\netcoreapp3.1\Biblio.exe
+C:\Users\Administrateur\source\repos\ProjectTab\Biblio\bin\Debug\netcoreapp3.1\Biblio.deps.json
+C:\Users\Administrateur\source\repos\ProjectTab\Biblio\bin\Debug\netcoreapp3.1\Biblio.runtimeconfig.json
+C:\Users\Administrateur\source\repos\ProjectTab\Biblio\bin\Debug\netcoreapp3.1\Biblio.runtimeconfig.dev.json
+C:\Users\Administrateur\source\repos\ProjectTab\Biblio\bin\Debug\netcoreapp3.1\Biblio.dll
+C:\Users\Administrateur\source\repos\ProjectTab\Biblio\bin\Debug\netcoreapp3.1\Biblio.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\Biblio\obj\Debug\netcoreapp3.1\Biblio.csprojAssemblyReference.cache
+C:\Users\Administrateur\source\repos\ProjectTab\Biblio\obj\Debug\netcoreapp3.1\Biblio.AssemblyInfoInputs.cache
+C:\Users\Administrateur\source\repos\ProjectTab\Biblio\obj\Debug\netcoreapp3.1\Biblio.AssemblyInfo.cs
+C:\Users\Administrateur\source\repos\ProjectTab\Biblio\obj\Debug\netcoreapp3.1\Biblio.dll
+C:\Users\Administrateur\source\repos\ProjectTab\Biblio\obj\Debug\netcoreapp3.1\Biblio.pdb

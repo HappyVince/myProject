@@ -1,0 +1,11 @@
+C:\Users\Administrateur\source\repos\ProjectTab\JeuConsole\bin\Debug\netcoreapp3.1\JeuConsole.exe
+C:\Users\Administrateur\source\repos\ProjectTab\JeuConsole\bin\Debug\netcoreapp3.1\JeuConsole.deps.json
+C:\Users\Administrateur\source\repos\ProjectTab\JeuConsole\bin\Debug\netcoreapp3.1\JeuConsole.runtimeconfig.json
+C:\Users\Administrateur\source\repos\ProjectTab\JeuConsole\bin\Debug\netcoreapp3.1\JeuConsole.runtimeconfig.dev.json
+C:\Users\Administrateur\source\repos\ProjectTab\JeuConsole\bin\Debug\netcoreapp3.1\JeuConsole.dll
+C:\Users\Administrateur\source\repos\ProjectTab\JeuConsole\bin\Debug\netcoreapp3.1\JeuConsole.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\JeuConsole\obj\Debug\netcoreapp3.1\JeuConsole.AssemblyInfoInputs.cache
+C:\Users\Administrateur\source\repos\ProjectTab\JeuConsole\obj\Debug\netcoreapp3.1\JeuConsole.AssemblyInfo.cs
+C:\Users\Administrateur\source\repos\ProjectTab\JeuConsole\obj\Debug\netcoreapp3.1\JeuConsole.dll
+C:\Users\Administrateur\source\repos\ProjectTab\JeuConsole\obj\Debug\netcoreapp3.1\JeuConsole.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\JeuConsole\obj\Debug\netcoreapp3.1\JeuConsole.csprojAssemblyReference.cache

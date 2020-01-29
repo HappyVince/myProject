@@ -1,0 +1,11 @@
+C:\Users\Administrateur\source\repos\ProjectTab\Execption\bin\Debug\netcoreapp3.1\Exeception.exe
+C:\Users\Administrateur\source\repos\ProjectTab\Execption\bin\Debug\netcoreapp3.1\Exeception.deps.json
+C:\Users\Administrateur\source\repos\ProjectTab\Execption\bin\Debug\netcoreapp3.1\Exeception.runtimeconfig.json
+C:\Users\Administrateur\source\repos\ProjectTab\Execption\bin\Debug\netcoreapp3.1\Exeception.runtimeconfig.dev.json
+C:\Users\Administrateur\source\repos\ProjectTab\Execption\bin\Debug\netcoreapp3.1\Exeception.dll
+C:\Users\Administrateur\source\repos\ProjectTab\Execption\bin\Debug\netcoreapp3.1\Exeception.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\Execption\obj\Debug\netcoreapp3.1\Exeception.AssemblyInfoInputs.cache
+C:\Users\Administrateur\source\repos\ProjectTab\Execption\obj\Debug\netcoreapp3.1\Exeception.AssemblyInfo.cs
+C:\Users\Administrateur\source\repos\ProjectTab\Execption\obj\Debug\netcoreapp3.1\Exeception.dll
+C:\Users\Administrateur\source\repos\ProjectTab\Execption\obj\Debug\netcoreapp3.1\Exeception.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\Execption\obj\Debug\netcoreapp3.1\Exeception.csprojAssemblyReference.cache

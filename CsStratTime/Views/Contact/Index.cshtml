@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    bool test = (bool)@ViewData["Authentifie"];
+}
+
+
+    <div id="page">
+        <button type="button" class="btn btn-secondary" id="Inscription">@Html.ActionLink("Inscription", "Inscription", "Login")</button>
+        <button type="button" class="btn btn-secondary" id="Connection">@Html.ActionLink("Se Connecter", "Index", "Login");</button>
+        <header>
+            <img id="logo"
+                 src="~/Images/csgoLogo.jfif" />
+        </header>
+        <nav id="nav">
+            <ul>
+                <li>@Html.ActionLink("Accueil", "Index", "Home");</li>
+                <li>@Html.ActionLink("Teams Strats", "Index", "TeamStrat")</li>
+                <li>@Html.ActionLink("Create Your Own Strat", "Index", "CreateStrat")</li>
+                @if (test == true)
+                {@Html.ActionLink("My Strats Database", "Index","MyStrats");
+            }
+                <li>@Html.ActionLink("Contact me", "Index", "Contact")</li>
+            </ul>
+        </nav>
+        <div id="content">
+            <div id="center">center</div>
+        </div>
+        <footer>footer</footer>
+    </div>

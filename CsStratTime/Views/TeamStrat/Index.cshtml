@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    bool test = (bool)@ViewData["Authentifie"];
+ }
+
+        @{ var imagePathMaps = "";
+            if (Request["photoChoice"] != null)
+            {
+                imagePathMaps = @"\Images\Maps\" + Request["photoChoice"];
+            }
+        }
+
+
+            <form method="post" action="">
+                <div id="page">
+                    <button type="button" class="btn btn-secondary" id="Inscription">@Html.ActionLink("Inscription", "Inscription", "Login")</button>
+                    <button type="button" class="btn btn-secondary" id="Connection">@Html.ActionLink("Se Connecter", "Index", "Login");</button>
+                    <header>
+                        <img id="logo"
+                             src="~/Images/csgoLogo.jfif" />
+                    </header>
+                    <nav id="nav">
+                        <ul>
+                            <li>@Html.ActionLink("Accueil", "Index", "Home");</li>
+                            <li>@Html.ActionLink("Teams Strats", "Index", "TeamStrat")</li>
+                            <li>@Html.ActionLink("Create Your Own Strat", "Index", "CreateStrat")</li>
+                            @if (test == true)
+                            {@Html.ActionLink("My Strats Database", "Index", "MyStrats");
+                        }
+                            <li>@Html.ActionLink("Contact me", "Index", "Contact")</li>
+                        </ul>
+                    </nav>
+                    <div id="content">
+                        <div id="left">
+                            <div>
+                                  <p>Choose your strat</p>
+                                <select name="photoChoice">
+                                    @foreach (var stratName in ViewBag.stratName)
+                                    {
+                                        <option value="@stratName">@stratName</option>
+                                    }
+                                </select>
+                                &nbsp;
+                                <input type="submit" value="Submit" />
+                            </div>
+                            <button type="button" class="btn btn-secondary">Save as jpeg</button>
+                        </div>
+                        <div id="center">
+                            <div style="padding:10px;">
+                                @if (imagePathMaps != "")
+                                {
+                                    <img src="@imagePathMaps" alt="Sample Image" />
+                                }
+                            </div>
+                        </div>
+                        <div id="right">right</div>
+                    </div>
+                    <footer>footer</footer>
+                </div>
+            </form>

@@ -1,0 +1,250 @@
+﻿@model EntityFramework.Utilisateur
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    bool test = (bool)@ViewData["Authentifie"];
+}
+
+@{ var imagePathMaps = "";
+    if (Request["photoChoice"] != null)
+    {
+        imagePathMaps = @"\Images\Maps\" + Request["photoChoice"];
+    }
+}
+
+@{ WebImage photo = null;
+    var newFileName = "";
+    var imagePath = "";
+
+    if (IsPost)
+    {
+        photo = WebImage.GetImageFromRequest();
+        if (photo != null)
+        {
+            newFileName = Guid.NewGuid().ToString() + "_" +
+                Path.GetFileName(photo.FileName);
+            imagePath = @"\Images\Upload\" + newFileName;
+            photo.Save(@"~\" + imagePath);
+        }
+    }
+}
+
+
+
+    <body onload="init()">
+        <button type="button" class="btn btn-secondary" id="Inscription">@Html.ActionLink("Inscription", "Inscription", "Login")</button>
+        <button type="button" class="btn btn-secondary" id="Connection">@Html.ActionLink("Se Connecter", "Index", "Login");</button>
+        <header>
+            <img id="logo"
+                 src="~/Images/csgoLogo.jfif" />
+        </header>
+        <nav id="nav">
+            <ul>
+                <li>@Html.ActionLink("Accueil", "Index", "Home");</li>
+                <li>@Html.ActionLink("Teams Strats", "Index", "TeamStrat")</li>
+                <li>@Html.ActionLink("Create Your Own Strat", "Index", "CreateStrat")</li>
+                @if (test == true)
+                {@Html.ActionLink("My Strats Database", "Index", "MyStrats");
+            }
+                <li>@Html.ActionLink("Contact me", "Index", "Contact")</li>
+            </ul>
+        </nav>
+        <form method="post" action="Try">
+            <div>
+                <p>Choose your Map</p>
+                <select name="photoChoice">
+                    @foreach (var stratName in ViewBag.stratName)
+                    {
+                        <option value="@stratName">@stratName</option>
+                    }
+                </select>
+                &nbsp;
+                <input type="submit" value="Submit" />
+            </div>
+        </form>
+        <div style="padding:10px;">
+            @if (imagePath != "")
+            {
+                <img src="@imagePath" alt="image" id="leimg" />
+
+            }
+            @if (imagePathMaps != "")
+            {
+                <img src="@imagePathMaps" alt="Sample Image" id="leimg" style="display:none" />
+            }
+
+        </div>
+        <img id="scream" width="1024" height="1024" src="~/Images/Maps/de_cache.png" alt="The Scream" style="display:none">
+        <canvas id="can" width="1024" height="1024" style="position:center;border:2px solid;"></canvas>
+        <div style="position:center">Choose Color</div>
+        <div style="position:center;width:10px;height:10px;background:green;" id="green" onclick="color(this)"></div>
+        <div style="position:center;width:10px;height:10px;background:blue;" id="blue" onclick="color(this)"></div>
+        <div style="position:center;width:10px;height:10px;background:red;" id="red" onclick="color(this)"></div>
+        <div style="position:center;width:10px;height:10px;background:yellow;" id="yellow" onclick="color(this)"></div>
+        <div style="position:center;width:10px;height:10px;background:orange;" id="orange" onclick="color(this)"></div>
+        <div style="position:center;width:10px;height:10px;background:black;" id="black" onclick="color(this)"></div>
+        <div style="position:center;">Eraser</div>
+        <div style="position:center;width:15px;height:15px;background:white;border:2px solid;" id="white" onclick="color(this)"></div>
+        <img id="canvasimg" style="position:absolute;top:10%;left:97%;display:none;">
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInput">Name</label>
+            <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Name your Strat">
+        </div>
+        <input type="button" value="clear" id="clr" size="23" onclick="erase()" style="position:center;">
+        <input type="button" value="saveMap" id="saveMap" size="30" style="position:center;">
+    </body>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+
+
+
+    $("#saveMap").click(function () {
+        console.log("blldz");
+        var image = document.getElementById("can").toDataURL("image/png");
+        console.log(image);
+        image = image.replace('data:image/png;base64,', '');
+        console.log(image);
+        $.ajax({
+            type: 'POST',
+            url: "/Home/Test",
+            data: '{ "imageData" : "' + image + '" }',
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: function (msg) {
+                alert('Image saved successfully !');
+            }
+        });
+    });
+
+    var canvas, ctx, flag = false,
+        prevX = 0,
+        currX = 0,
+        prevY = 0,
+        currY = 0,
+        dot_flag = false;
+
+    var x = "black",
+        y = 2;
+
+    function init() {
+        canvas = document.getElementById('can');
+        ctx = canvas.getContext("2d");
+        w = canvas.width;
+        h = canvas.height;
+
+        canvasMap = document.getElementById("map");
+        ctxMap = canvas.getContext("2d");
+        imgMap = document.getElementById("leimg");
+        ctxMap.drawImage(imgMap, 0, 0);
+
+        canvas.addEventListener("mousemove", function (e) {
+            findxy('move', e)
+        }, false);
+        canvas.addEventListener("mousedown", function (e) {
+            findxy('down', e)
+        }, false);
+        canvas.addEventListener("mouseup", function (e) {
+            findxy('up', e)
+        }, false);
+        canvas.addEventListener("mouseout", function (e) {
+            findxy('out', e)
+        }, false);
+    }
+
+    function color(obj) {
+        switch (obj.id) {
+            case "green":
+                x = "green";
+                break;
+            case "blue":
+                x = "blue";
+                break;
+            case "red":
+                x = "red";
+                break;
+            case "yellow":
+                x = "yellow";
+                break;
+            case "orange":
+                x = "orange";
+                break;
+            case "black":
+                x = "black";
+                break;
+            case "white":
+                x = "white";
+                break;
+        }
+        if (x == "white") y = 14;
+        else y = 2;
+
+    }
+
+    function draw() {
+        ctx.beginPath();
+        ctx.moveTo(prevX, prevY);
+        ctx.lineTo(currX, currY);
+        ctx.strokeStyle = x;
+        ctx.lineWidth = y;
+        ctx.stroke();
+        ctx.closePath();
+    }
+
+    function erase() {
+        var m = confirm("Want to clear");
+        if (m) {
+            ctx.clearRect(0, 0, w, h);
+            document.getElementById("canvasimg").style.display = "none";
+        }
+    }
+
+    function download(dataurl, filename) {
+        var a = document.createElement("a");
+        a.href = dataurl;
+        a.setAttribute("download", filename);
+        a.click();
+    }
+
+
+    function findxy(res, e) {
+        if (res == 'down') {
+            prevX = currX;
+            prevY = currY;
+            currX = e.clientX - canvas.offsetLeft;
+            currY = e.clientY - canvas.offsetTop;
+
+            flag = true;
+            dot_flag = true;
+            if (dot_flag) {
+                ctx.beginPath();
+                ctx.fillStyle = x;
+                ctx.fillRect(currX, currY, 2, 2);
+                ctx.closePath();
+                dot_flag = false;
+            }
+        }
+        if (res == 'up' || res == "out") {
+            flag = false;
+        }
+        if (res == 'move') {
+            if (flag) {
+                prevX = currX;
+                prevY = currY;
+                currX = e.clientX - canvas.offsetLeft;
+                currY = e.clientY - canvas.offsetTop;
+                draw();
+            }
+        }
+    }
+
+
+
+
+
+
+
+</script>

@@ -1,0 +1,25 @@
+﻿<link href="~/Content/StyleSheet1.css" rel="stylesheet" type="text/css" />
+
+
+@{
+    ViewBag.Title = "GetUtilisateur";
+}
+<table>
+    <tr>
+        <th>Colonne 1 : Login</th>
+        <th>Colonne 2 : Password</th>
+    </tr>
+
+    @foreach (var item in ViewBag.list)
+    {
+        <tr>
+            <th>@item.Login</th>
+            <th>@item.Password</th>
+        </tr>
+    }
+
+    @Html.ActionLink("Retour accueil", "RetourAccueil")
+
+</table>
+<h2>GetUtilisateur</h2>
+

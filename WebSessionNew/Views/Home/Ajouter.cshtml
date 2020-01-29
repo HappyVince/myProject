@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Ajouter";
+}
+
+<h2>Ajouter</h2>
+
+
+@using (Html.BeginForm("Ajouter", "Home"))
+{
+<p>Prix</p>
+    @Html.Editor("Prix");
+    <br />
+    @Html.ValidationMessage("Prix");
+    <br />
+    <p>Nom</p>
+    @Html.Editor("Nom");
+    <br />
+    @Html.ValidationMessage("Nom");
+    <br />
+    <p>Infos</p>
+    @Html.Editor("Infos");
+    <br />
+    @Html.ValidationMessage("Infos");
+    <br />
+    <input type="submit" name="but" value="Ajouter" />
+
+    <p>@ViewBag.count</p>
+}

@@ -1,0 +1,11 @@
+C:\Users\Administrateur\source\repos\ProjectTab\WcfNetFramework\obj\Debug\WcfNetFramework.csprojAssemblyReference.cache
+C:\Users\Administrateur\source\repos\ProjectTab\WcfNetFramework\bin\Debug\WcfNetFramework.exe.config
+C:\Users\Administrateur\source\repos\ProjectTab\WcfNetFramework\bin\Debug\WcfNetFramework.exe
+C:\Users\Administrateur\source\repos\ProjectTab\WcfNetFramework\bin\Debug\WcfNetFramework.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\WcfNetFramework\obj\Debug\WcfNetFramework.exe
+C:\Users\Administrateur\source\repos\ProjectTab\WcfNetFramework\obj\Debug\WcfNetFramework.pdb
+C:\Users\Administrateur\source\repos\ProjectTab\WcfNetFramework\bin\Debug\EntityFramework.dll
+C:\Users\Administrateur\source\repos\ProjectTab\WcfNetFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrateur\source\repos\ProjectTab\WcfNetFramework\bin\Debug\EntityFramework.xml
+C:\Users\Administrateur\source\repos\ProjectTab\WcfNetFramework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrateur\source\repos\ProjectTab\WcfNetFramework\obj\Debug\WcfNetFramework.csproj.CopyComplete

@@ -1,0 +1,37 @@
+﻿@model EntityFramework.Personne
+@{
+    bool test = (bool)@ViewData["Authentifie"];
+}
+@if (test)
+{
+    <h3> Utilisateur deja connecte avec le login @Model.Login </h3>
+    @Html.ActionLink("Cliquerpourvousdeconnecter?", "Deconnexion")
+}
+else
+{
+    <h3>Connexion :</h3>
+    using (Html.BeginForm())
+    {
+        <div>
+            @Html.Label("Login")
+            <br />
+            @Html.TextBox("Login")
+            <br />
+            @Html.ValidationMessage("Login")
+        </div>
+        <div>
+            @Html.Label("Password")
+            <br />
+            @Html.Password("Password")
+            <br />
+            @Html.ValidationMessage("Password")
+        </div>
+        <input type="submit" value="Connexion" />
+        <br />
+        @Html.ActionLink("Inscription", "Inscription")
+    }
+}
+@if (Model != null && test == false)
+{
+    <span>Authentification error</span>
+}
